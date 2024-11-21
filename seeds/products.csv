@@ -1,0 +1,16 @@
+product_id,product_name,category,price,stock,created_at,supplier
+1,Laptop,Electronics,800.00,50,2024-01-01,Supplier A
+2,Smartphone,Electronics,500.00,200,2024-01-02,Supplier B
+3,Tablet,Electronics,300.00,150,2024-01-03,Supplier A
+4,Monitor,Electronics,150.00,80,2024-01-04,Supplier C
+5,Keyboard,Accessories,30.00,300,2024-01-05,Supplier B
+6,Mouse,Accessories,20.00,400,2024-01-06,Supplier C
+7,Chair,Furniture,100.00,100,2024-01-07,Supplier D
+8,Desk,Furniture,200.00,60,2024-01-08,Supplier D
+9,Lamp,Furniture,40.00,120,2024-01-09,Supplier E
+10,Headphones,Electronics,80.00,150,2024-01-10,Supplier F
+11,Speaker,Electronics,120.00,130,2024-01-11,Supplier G
+12,Webcam,Accessories,60.00,90,2024-01-12,Supplier H
+13,Mic,Accessories,50.00,110,2024-01-13,Supplier H
+14,Router,Electronics,70.00,70,2024-01-14,Supplier I
+15,Printer,Electronics,200.00,40,2024-01-15,Supplier J

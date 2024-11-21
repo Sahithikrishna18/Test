@@ -1,0 +1,16 @@
+payment_id,order_id,payment_date,payment_method,amount,currency,status
+1,101,2023-01-01,Credit Card,1200.00,USD,Completed
+2,102,2023-01-02,PayPal,300.00,USD,Completed
+3,103,2023-01-03,Debit Card,120.00,USD,Failed
+4,104,2023-01-04,Credit Card,800.00,USD,Completed
+5,105,2023-01-05,Cash,1200.00,USD,Pending
+6,106,2023-01-06,Credit Card,600.00,USD,Completed
+7,107,2023-01-07,PayPal,125.00,USD,Completed
+8,108,2023-01-08,Debit Card,200.00,USD,Failed
+9,109,2023-01-09,Credit Card,100.00,USD,Pending
+10,110,2023-01-10,PayPal,300.00,USD,Completed
+11,111,2023-01-11,Cash,250.00,USD,Refunded
+12,112,2023-01-12,Credit Card,135.00,USD,Completed
+13,113,2023-01-13,Debit Card,350.00,USD,Completed
+14,114,2023-01-14,Cash,160.00,USD,Completed
+15,115,2023-01-15,Credit Card,60.00,USD,Pending
