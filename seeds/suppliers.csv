@@ -1,0 +1,16 @@
+supplier_id,supplier_name,contact_person,email,phone,address,country
+1,Supplier A,John Doe,johndoe@supplierA.com,123-456-7890,123 Elm St,USA
+2,Supplier B,Jane Smith,janesmith@supplierB.com,234-567-8901,456 Oak St,Canada
+3,Supplier C,Robert Brown,robertbrown@supplierC.com,345-678-9012,789 Pine St,UK
+4,Supplier D,Linda Johnson,lindajohnson@supplierD.com,456-789-0123,101 Maple St,Germany
+5,Supplier E,Michael Davis,michaeldavis@supplierE.com,567-890-1234,202 Cedar St,Australia
+6,Supplier F,Susan Clark,susanclark@supplierF.com,678-901-2345,303 Birch St,India
+7,Supplier G,James Taylor,jamestaylor@supplierG.com,789-012-3456,404 Ash St,Japan
+8,Supplier H,Ashley White,ashleywhite@supplierH.com,890-123-4567,505 Willow St,France
+9,Supplier I,David Green,davidgreen@supplierI.com,901-234-5678,606 Spruce St,Italy
+10,Supplier J,Emily Harris,emilyharris@supplierJ.com,012-345-6789,707 Poplar St,Spain
+11,Supplier K,Matthew Walker,matthewwalker@supplierK.com,123-456-7890,808 Fir St,China
+12,Supplier L,Patricia Adams,patriciaadams@supplierL.com,234-567-8901,909 Beech St,Brazil
+13,Supplier M,Steven Lewis,stevenlewis@supplierM.com,345-678-9012,1010 Walnut St,Mexico
+14,Supplier N,Nancy Scott,nancyscott@supplierN.com,456-789-0123,1111 Chestnut St,South Africa
+15,Supplier O,Brian Moore,brianmoore@supplierO.com,567-890-1234,1212 Redwood St,Russia
