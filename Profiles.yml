@@ -1,0 +1,17 @@
+Analytics:
+  my_project:
+  target: default
+  outputs:
+    dev:
+      type: snowflake
+      account: <eja59268.east-us-2.azure>
+      user: SahithiKrishna
+      password: Arunasree@18
+      role: ACCOUNTADMIN
+      database: Analytics
+      warehouse: Transforming
+      schema: dbt_SahithiKrishna
+      threads: 6
+      client_session_keep_alive: True
+      query_tag: dbt
+      authenticator: externalbrowser

@@ -1,0 +1,6 @@
+Claim_Id, Agreement_Id,Claim_Amount,Incident_Id,Damage_Type,Date_Of_Claim,Claim_Status,Cust_Id
+CL001,AG001,5000,INC001,Collision,2022-01-01,Approved,C001
+CL002,AG002,7500,INC002,Theft,2022-02-15,Pending,C002
+CL003,AG003,10000,INC003,Vandalism,2022-03-30,Rejected,C003
+CL004,AG004,2500,INC004,Collision,2022-04-18,Approved,C004
+CL005,AG005,6000,INC005,Fire,2022-05-05,Pending,C005
