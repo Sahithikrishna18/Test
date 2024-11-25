@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: E-commerce
+    database: ANALYTICS
+    schema: dbt_snalluri
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
+      - name : raw_products
+      - name : raw_sales
+      - name : raw_suppliers
