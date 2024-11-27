@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: E-commerce
+    database: ANALYTICS
+    schema: dbt_snalluri
+    tables:
+      - name: int_customers_orders
+      - name: int_payments_sales
+      - name : int_products_suppliers
