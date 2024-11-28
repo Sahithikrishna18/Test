@@ -40,22 +40,3 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
-
-seeds:
-  dbt_project:
-    dbt_sahithikrishna:
-      +schema: analytics
-      +quote_columns: true
-      +database: Analytics
-
-      Claims:
-          +enabled: true
-          +column_types:
-            Claim_Id: VARCHAR(20)
-            Agreement_Id: VARCHAR(20)
-            Claim_Amount: INTEGER
-            Incident_Id: VARCHAR(20)
-            Damage_Type: VARCHAR(20)
-            Date_Of_Claim: DATE
-            Claim_Status: CHAR(10)
-            Cust_Id: VARCHAR(20)
