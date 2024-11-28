@@ -1,45 +1,21 @@
 {{ config(
-    materialized='ephemeral'
+    materialized='ephemeral',
+    unique_key='surrogate_key'
 ) }}
 
-WITH staged_products AS (
-    SELECT
-        product_id,
-        product_name,
-        category,
-        price,
-        stock,
-        created_at,
-        supplier
-    FROM {{ ref('stg_products') }}
-),
-
-staged_suppliers AS (
-    SELECT
-        supplier_id,
-        supplier_name,
-        contact_person,
-        email,
-        phone,
-        address,
-        country
-    FROM {{ ref('stg_suppliers') }}
-)
-
 SELECT
+    MD5(CONCAT(p.product_id, '-', s.supplier_id)) AS surrogate_key,
     p.product_id,
     p.product_name,
     p.category,
     p.price,
     p.stock,
-    p.created_at,
-    s.supplier_id,
-    s.supplier_name,
-    s.contact_person,
+    p.supplier AS supplier_name,
     s.email AS supplier_email,
     s.phone AS supplier_phone,
-    s.address,
+    s.address AS supplier_address,
     s.country
-FROM staged_products p
-LEFT JOIN staged_suppliers s
-    ON p.supplier = s.supplier_id;
+FROM stg_products p
+JOIN stg_suppliers s
+    ON p.supplier = s.supplier_name
+WHERE p.stock > 0
