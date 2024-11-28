@@ -14,3 +14,4 @@ order_id,customer_id,order_date,ship_date,order_status,total_amount,discount
 113,13,2024-01-13,2024-01-15,Processing,230.00,0.10
 114,14,2024-01-14,2024-01-16,Shipped,310.00,0.05
 115,15,2024-01-15,2024-01-17,Shipped,125.00,0.15
+116,18,2024-01-19,2024-01-22,Processing,126.00,0.10
