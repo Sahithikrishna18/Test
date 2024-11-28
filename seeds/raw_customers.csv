@@ -2,9 +2,9 @@ customer_id,first_name,last_name,email,phone,city,state
 1,John,Doe,johndoen@example.com,123-456-7890,New York,NY
 2,Jane,Smith,janesmith@example.com,234-567-8901,San Francisco,CA
 3,Mark,Taylor,marktaylor@example.com,345-678-9012,Chicago,IL
-4,Linda,Jones,lindajones@example.com,456-709-0123,Houston,TX
+4,Linda,Jones,lindajone@example.com,456-709-0123,Houston,TX
 5,Michael,Brown,michaelbrown@example.com,567-890-1234,Phoenix,AZ
-6,Susan,Johnson,susanjohnson@example.com,678-901-2345,Philadelphia,PA
+6,Susan,Johnson,susanjohnson@example.com,608-901-2345,Philadelphia,PA
 7,Robert,Lee,robertlee@example.com,789-012-3456,San Antonio,TX
 8,Nancy,Adams,nancyadams@example.com,890-123-4567,Dallas,TX
 9,Steven,Wright,stevenwright@example.com,901-234-5678,San Diego,CA
@@ -14,4 +14,4 @@ customer_id,first_name,last_name,email,phone,city,state
 13,William,Scott,williamscott@example.com,345-678-9012,Columbus,OH
 14,Barbara,King,barbaraking@example.com,456-789-0123,Charlotte,NC
 15,Joseph,Green,josephgreen@example.com,567-890-1234,Indianapolis,IN
-16,Sam,Park,sampark@example.com,513-386-1804,Cincinnati,OH
+18,Ram,Krishna,ramkrishna@example.com,513-906-8787,Cincinnati,OH
