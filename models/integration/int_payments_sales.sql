@@ -1,32 +1,36 @@
 {{ config(
-    materialized='table'
+    materialized='table',
+    unique_key='surrogate_key'
 ) }}
 
-WITH staged_payments AS (
+WITH sales_data AS (
     SELECT
-        payment_id,
-        order_id,
-        payment_date,
-        payment_method,
-        amount,
-        currency,
-        status
-    FROM {{ ref('stg_payments') }}
+        s.sale_id,
+        s.order_id,
+        s.product_id,
+        s.quantity,
+        s.sale_price,
+        s.tax,
+        s.discount
+    FROM {{ ref('stg_sales') }} s
 ),
 
-staged_sales AS (
+payment_data AS (
     SELECT
-        sale_id,
-        order_id,
-        product_id,
-        quantity,
-        sale_price,
-        tax,
-        discount
-    FROM {{ ref('stg_sales') }}
+        p.payment_id,
+        p.order_id,
+        p.payment_date,
+        p.payment_method,
+        p.amount AS payment_amount,
+        p.currency,
+        p.status AS payment_status
+    FROM {{ ref('stg_payments') }} p
 )
 
+-- Join the Sales and Payments tables on the order_id
 SELECT
+    MD5(CONCAT(s.sale_id, '-', s.order_id, '-', p.payment_id)) AS surrogate_key,
+    
     s.sale_id,
     s.order_id,
     s.product_id,
@@ -37,9 +41,9 @@ SELECT
     p.payment_id,
     p.payment_date,
     p.payment_method,
-    p.amount,
+    p.payment_amount,
     p.currency,
-    p.status
-FROM staged_sales s
-LEFT JOIN staged_payments p
-    ON s.order_id = p.order_id;
+    p.payment_status
+FROM sales_data s
+LEFT JOIN payment_data p
+    ON s.order_id = p.order_id
