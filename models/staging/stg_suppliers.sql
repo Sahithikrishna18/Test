@@ -3,7 +3,7 @@
 ) }}
 
 SELECT
-    supplier_id as string,
+    supplier_id,
     supplier_name,
     contact_person,
     email,
