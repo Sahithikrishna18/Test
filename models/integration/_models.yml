@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: incremental_model
+    description: "Integration model with incremental materialization for customer and order data."
+    columns:
+      - name: surrogate_key
+        description: "Unique key generated using customer_id and order_id."
+        tests:
+          - unique
+          - not_null
+      - name: created_timestamp
+        description: "Timestamp indicating when the record was created."
+        tests:
+          - not_null
+      - name: updated_timestamp
+        description: "Timestamp indicating when the record was last updated."
+        tests:
+          - not_null
+
+  - name: table_model
+    description: "Integration model with table materialization for sales and payment data."
+    columns:
+      - name: surrogate_key
+        description: "Unique key generated using sale_id, order_id, and payment_id."
+        tests:
+          - unique
+          - not_null
+      - name: sale_id
+        description: "ID of the sale."
+        tests:
+          - not_null
+      - name: order_id
+        description: "ID of the order."
+        tests:
+          - not_null
+      - name: product_id
+        description: "ID of the product sold."
+        tests:
+          - not_null
+      - name: payment_id
+        description: "ID of the payment."
+        tests:
+          - not_null
+
+  - name: ephemeral_model
+    description: "Ephemeral model for joining product and supplier data."
+    columns:
+      - name: surrogate_key
+        description: "Unique key generated using product_id and supplier_id."
+        tests:
+          - unique
+          - not_null
+      - name: product_id
+        description: "ID of the product."
+        tests:
+          - not_null
+      - name: supplier_id
+        description: "ID of the supplier."
+        tests:
+          - not_null
+      - name: stock
+        description: "Quantity of the product in stock."
+        tests:
+          - not_null
+
