@@ -14,4 +14,5 @@ customer_id,first_name,last_name,email,phone,city,state
 13,William,Scott,williamscott@example.com,345-678-9012,Columbus,OH
 14,Barbara,King,barbaraking@example.com,456-789-0123,Charlotte,NC
 15,Joseph,Green,josephgreen@example.com,567-890-1234,Indianapolis,IN
-18,Ram,Krishna,ramkrishna@example.com,513-906-8787,Cincinnati,OH
+18,Ram,Krishna,ramkrish@example.com,513-906-8787,Cincinnati,OH
+16,Siri,Velluri,sirivelluri@example.com,513-817-6463,Blueash,OH
