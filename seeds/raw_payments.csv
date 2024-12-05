@@ -12,6 +12,7 @@ payment_id,order_id,payment_date,payment_method,amount,currency,status
 11,111,2023-01-11,Cash,250.00,USD,Refunded
 12,112,2023-01-12,Credit Card,135.00,USD,Completed
 13,113,2023-01-13,Debit Card,350.00,USD,Completed
-14,114,2023-01-14,Cash,160.00,USD,Completed
+14,117,2023-01-14,Cash,160.00,USD,Completed
 15,115,2023-01-15,PayPal,60.00,USD,Pending
 16,116,2023-01-16,Cash,500.00,USD,Completed
+18,118,2023-01-17,PayPal,750.00,USD,Pending
