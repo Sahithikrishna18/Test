@@ -5,8 +5,8 @@
 
 WITH joined_data AS (
     SELECT
-        -- Generate surrogate key
-        md5(CONCAT(c.customer_id, '-', o.order_id)) AS surrogate_key,
+        -- Generate surrogate key using macro
+        {{ generate_surrogate_key('c.customer_id', 'o.order_id') }} AS surrogate_key,
         c.customer_id,
         c.first_name,
         c.last_name,

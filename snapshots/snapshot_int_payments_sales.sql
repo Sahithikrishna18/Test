@@ -4,9 +4,9 @@
     config(
         database='Analytics',
         schema='dbt_snalluri',
-        unique_key='Surrogate_Key',  
-        strategy='timestamp',                 
-        updated_at='payment_date'                 
+        unique_key='Surrogate_Key',
+        strategy='check',
+        check_cols= 'all'     
     )
 }}
 
